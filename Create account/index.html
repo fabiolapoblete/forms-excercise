@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Create account</title>
+  </head>
+  <body>
+    <article class="wrapper">
+      <header class="header">
+        <h1>Välkommen!</h1>
+      </header>
+      <form class="form">
+        <h1 class="form__header">Registrera dig för ett konto</h1>
+        <section class="field">
+          <label for="name" class="field__label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value="Jane Goodall"
+            class="field__input"
+          />
+        </section>
+        <section class="field">
+          <label for="email" class="field__label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="jane@chimpanzee.com"
+            class="field__input"
+          />
+        </section>
+        <section class="field">
+          <label for="password" class="field__label">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value="lösenord"
+            class="field__input"
+          />
+        </section>
+        <button class="form__btn">Sign me up!</button>
+      </form>
+    </article>
+  </body>
+</html>
