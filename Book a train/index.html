@@ -8,22 +8,71 @@
     <title>Book a train</title>
   </head>
   <body>
-    <article clasS="wrapper">
-      <header>
+    <article class="wrapper">
+      <header class="header">
         <h1>Åka tåg</h1>
       </header>
 
-      <article class="location">
-        <section class="location__departure">
+      <article class="station">
+        <section class="station__departure">
           <h2>Stockholm</h2>
           <p>10.30</p>
         </section>
-
-        <section class="location__arrival">
+        <section class="station__arrival">
           <h2>Göteborg</h2>
           <p>14.45</p>
         </section>
       </article>
+
+      <form class="form">
+        <section class="form__class__second">
+          <input
+            type="radio"
+            id="second-class"
+            name="class"
+            value="2:a klass"
+          />
+          <label for="second-class">2:a klass</label>
+        </section>
+        <section class="form__class__first">
+          <input type="radio" id="first-class" name="class" value="1:a klass"  />
+          <label for="first-class">1:a klass</label>
+        </section>
+          
+        <section class="tickets">
+            <label for="tickets">Antal biljetter</label>
+            <input type="number" min="1" id="tickets" name="tickets" value="1" class="form__input" />
+         </section>
+
+        <section class="title">
+          <label for="title">Titel</label>
+          <select name="title" id="title" class="form__input">
+            <option value="Ms.">Ms.</option>
+            <option value="Mr">Mr.</option>
+            <option value="Mrs">Mrs.</option>
+          </select>
+        </section>
+
+        <section class="f-name">
+          <label for="f-name">Förnamn</label>
+          <input type="text" id="f-name" name="f-name" value="Greta" class="form__input" />
+        </section>
+        <section class="l-name">
+          <label for="l-name">Efernamn</label>
+          <input type="text" id="l-name" name="l-name" value="Thunberg" class="form__input" />
+        </section>
+
+        <section class="terms">
+          <input type="checkbox" id="terms" name="terms" />
+          <label for="terms">Godkänner villkoren</label>
+        </section>
+
+        <button class="form__button">Boka biljetter</button>
+      </form>
+    
+    </article>
+
+    
     </article>
   </body>
 </html>
